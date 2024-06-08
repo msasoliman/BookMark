@@ -38,13 +38,13 @@ h1:hover::before {
 
 h2::before,
 h2::after {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
+  /* display: inline-block; */
+  /* font-style: normal; */
+  /* font-variant: normal; */
+  /* text-rendering: auto; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* font-family: "Font Awesome 6 Free"; */
+  /* font-weight: 900; */
   content: "\f02e";
 }
 h2 {
