@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstarp/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <div class="container">
+        <div class="w-75 mx-auto d-flex flex-column mt-5">
+          <h1 class="text-center py-5 py-2 position-relative">Bookmark</h1>
+          <h2 class="text-center mt-3">Bookmark your favorite sites</h2>
+
+          <label class="mt-5" for="bookmark "
+            ><i class="fa-solid fa-book-bookmark pe-2 t"></i>Site Name</label
+          >
+          <input
+            class="px-2 form-control"
+            type="text"
+            id="siteName"
+            placeholder="Bookmark Name"
+          />
+          <label class="mt-4" for="websiteUrl"
+            ><i class="fa-solid fa-link pe-2"></i>Site URL</label
+          >
+          <input
+            class="px-2 form-control"
+            type="text"
+            id="webUrl"
+            placeholder="Website URL"
+          />
+        </div>
+        <div
+          class="w-75 mx-auto d-flex flex-column align-items-center mt-3 borderDotted py-5"
+        >
+          <button class="btn bg-danger text-white w-25" onclick="addBookMark()">
+            Submit
+          </button>
+        </div>
+
+        <table class="w-75 mx-auto mt-5">
+          <thead class="bg-white">
+            <tr class="text-center">
+              <th class="p-2">Index</th>
+              <th class="p-2">Website Name</th>
+              <th class="p-2">Visit</th>
+              <th class="p-2">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+    <!-- JS -->
+    <script src="css/bootstarp/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>

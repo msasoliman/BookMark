@@ -1,0 +1,76 @@
+body {
+  background-color: #f7ecde;
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 60px;
+  border-bottom: #352e28 2px dotted;
+  padding: 0;
+  margin: 0;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 10%;
+  left: 50%;
+  bottom: 30%;
+  transform: translate(-50%, -50%);
+  bottom: 20%;
+  background-color: #fec260;
+  transition: height 350ms;
+  z-index: -1;
+}
+h1:hover::before {
+  height: 30%;
+}
+
+h2::before,
+h2::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f02e";
+}
+h2 {
+  font-family: "Righteous", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 30px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.borderDotted {
+  border-bottom: #352e28 2px dotted;
+}
+th {
+  border-bottom: #dee2e6 2px solid;
+}
